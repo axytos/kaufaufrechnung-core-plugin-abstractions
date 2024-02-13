@@ -10,7 +10,8 @@
     "license": "proprietary",
     "type": "library",
     "require": {
-        "php": ">=5.6.0"
+        "php": ">=5.6.0",
+        "axytos/kaufaufrechnung-core-abstractions": "1.4.14"
     },
     "autoload": {
         "psr-4": {
