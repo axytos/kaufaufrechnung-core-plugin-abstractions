@@ -20,7 +20,7 @@ interface TrackingInformationInterface
     public function getDeliveryMethod(); // Logistician
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\Tracking\DeliveryAddressInterface
+     * @return Tracking\DeliveryAddressInterface
      */
     public function getDeliveryAddress();
 

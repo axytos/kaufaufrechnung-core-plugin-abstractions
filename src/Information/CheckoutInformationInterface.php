@@ -10,27 +10,28 @@ interface CheckoutInformationInterface
     public function getOrderNumber();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\Checkout\CustomerInterface
+     * @return Checkout\CustomerInterface
      */
     public function getCustomer();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\Checkout\InvoiceAddressInterface
+     * @return Checkout\InvoiceAddressInterface
      */
     public function getInvoiceAddress();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\Checkout\DeliveryAddressInterface
+     * @return Checkout\DeliveryAddressInterface
      */
     public function getDeliveryAddress();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\Checkout\BasketInterface
+     * @return Checkout\BasketInterface
      */
     public function getBasket();
 
     /**
      * @param mixed[] $data
+     *
      * @return void
      */
     public function savePreCheckResponseData($data);

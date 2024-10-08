@@ -15,7 +15,7 @@ class AxytosOrderStateInfo
     private $data;
 
     /**
-     * @param string $name
+     * @param string      $name
      * @param string|null $data
      */
     public function __construct($name, $data = null)
