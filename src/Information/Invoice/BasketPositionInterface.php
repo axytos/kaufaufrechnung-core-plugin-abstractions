@@ -15,7 +15,7 @@ interface BasketPositionInterface
     public function getProductName();
 
     /**
-     * @return int
+     * @return float
      */
     public function getQuantity();
 

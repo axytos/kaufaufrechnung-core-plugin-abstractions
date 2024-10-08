@@ -10,7 +10,7 @@ interface BasketPositionInterface
     public function getProductNumber();
 
     /**
-     * @return int
+     * @return float
      */
     public function getQuantity();
 }

@@ -10,7 +10,7 @@ interface BasketUpdateInformationInterface
     public function getOrderNumber();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\BasketUpdate\BasketInterface
+     * @return BasketUpdate\BasketInterface
      */
     public function getBasket();
 }

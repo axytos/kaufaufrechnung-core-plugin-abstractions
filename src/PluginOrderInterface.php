@@ -10,18 +10,19 @@ interface PluginOrderInterface
     public function getOrderNumber();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Model\AxytosOrderStateInfo|null
+     * @return Model\AxytosOrderStateInfo|null
      */
     public function loadState();
 
     /**
-     * @param string $state
+     * @param string      $state
      * @param string|null $data
+     *
      * @return void
      */
     public function saveState($state, $data = null);
 
-    /// CHECKOUT
+    // / CHECKOUT
 
     /**
      * @return void
@@ -29,11 +30,11 @@ interface PluginOrderInterface
     public function freezeBasket();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\CheckoutInformationInterface
+     * @return Information\CheckoutInformationInterface
      */
     public function checkoutInformation();
 
-    /// CANCEL
+    // / CANCEL
 
     /**
      * @return bool
@@ -41,11 +42,11 @@ interface PluginOrderInterface
     public function hasBeenCanceled();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\CancelInformationInterface
+     * @return Information\CancelInformationInterface
      */
     public function cancelInformation();
 
-    /// INVOICE
+    // / INVOICE
 
     /**
      * @return bool
@@ -53,11 +54,11 @@ interface PluginOrderInterface
     public function hasBeenInvoiced();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\InvoiceInformationInterface
+     * @return Information\InvoiceInformationInterface
      */
     public function invoiceInformation();
 
-    /// REFUND
+    // / REFUND
 
     /**
      * @return bool
@@ -65,11 +66,11 @@ interface PluginOrderInterface
     public function hasBeenRefunded();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\RefundInformationInterface
+     * @return Information\RefundInformationInterface
      */
     public function refundInformation();
 
-    /// SHIPPING
+    // / SHIPPING
 
     /**
      * @return bool
@@ -87,11 +88,11 @@ interface PluginOrderInterface
     public function saveHasShippingReported();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\ShippingInformationInterface
+     * @return Information\ShippingInformationInterface
      */
     public function shippingInformation();
 
-    /// TRACKING
+    // / TRACKING
 
     /**
      * @return bool
@@ -104,11 +105,11 @@ interface PluginOrderInterface
     public function saveNewTrackingInformation();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\TrackingInformationInterface
+     * @return Information\TrackingInformationInterface
      */
     public function trackingInformation();
 
-    /// BASKET-UPDATE
+    // / BASKET-UPDATE
 
     /**
      * @return bool
@@ -121,11 +122,11 @@ interface PluginOrderInterface
     public function saveBasketUpdatesReported();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\BasketUpdateInformationInterface
+     * @return Information\BasketUpdateInformationInterface
      */
     public function basketUpdateInformation();
 
-    /// PAYMENT
+    // / PAYMENT
 
     /**
      * @return void
@@ -133,7 +134,7 @@ interface PluginOrderInterface
     public function saveHasBeenPaid();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\PaymentInformationInterface
+     * @return Information\PaymentInformationInterface
      */
     public function paymentInformation();
 }

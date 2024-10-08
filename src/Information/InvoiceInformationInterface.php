@@ -15,7 +15,7 @@ interface InvoiceInformationInterface
     public function getInvoiceNumber();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\Invoice\BasketInterface
+     * @return Invoice\BasketInterface
      */
     public function getBasket();
 }
