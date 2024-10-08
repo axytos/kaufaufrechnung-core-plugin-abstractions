@@ -15,7 +15,7 @@ interface RefundInformationInterface
     public function getInvoiceNumber();
 
     /**
-     * @return \Axytos\KaufAufRechnung\Core\Plugin\Abstractions\Information\Refund\BasketInterface
+     * @return Refund\BasketInterface
      */
     public function getBasket();
 }

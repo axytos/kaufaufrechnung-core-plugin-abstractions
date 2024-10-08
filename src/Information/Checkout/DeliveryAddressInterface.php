@@ -57,15 +57,15 @@ interface DeliveryAddressInterface
     /**
      * @return string|null
      */
-    public function getAdditionalAddressLine2(); //addressLine2
+    public function getAdditionalAddressLine2(); // addressLine2
 
     /**
      * @return string|null
      */
-    public function getAdditionalAddressLine3(); //addressLine3
+    public function getAdditionalAddressLine3(); // addressLine3
 
     /**
      * @return string|null
      */
-    public function getAdditionalAddressLine4(); //addressLine4
+    public function getAdditionalAddressLine4(); // addressLine4
 }
