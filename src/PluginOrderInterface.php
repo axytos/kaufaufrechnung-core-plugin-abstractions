@@ -66,6 +66,18 @@ interface PluginOrderInterface
     public function hasBeenRefunded();
 
     /**
+     * “Refund reported” (vollständige Refund-Report-Flag).
+     *
+     * @return void
+     */
+    public function saveHasRefundReported();
+
+    /**
+     * @return bool
+     */
+    public function hasRefundReported();
+
+    /**
      * @return Information\RefundInformationInterface
      */
     public function refundInformation();
